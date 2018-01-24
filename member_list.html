@@ -58,9 +58,9 @@
             <div id="nakano" class="thumbnail"></div>
             <h3 class="name">
                 <p>中野　裕太</p>
-                <small class="position">iOT</small>
+                <small class="position">iOT、ロゴデザイン</small>
             </h3>
-            <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.</p>
+            <p>学校のプリンターの品質が悪く印刷に苦労。ハードウェア周りはスムーズにいったのでよかったが、ただのロード画面の作成に苦労。.</p>
         </article>
     </div>
     <div class="row">
@@ -68,9 +68,9 @@
             <div id="mizobata" class="thumbnail"></div>
             <h3 class="name">
                 <p>溝端　晴香</p>
-                <small class="position">イラスト全部</small>
+                <small class="position">アニメーション、イラスト全部</small>
             </h3>
-            <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas</p>
+            <p>自分で描いたものが形になるというのが新鮮でした。印刷に悩まされて辛かったです。</p>
         </article>
         <article class="col-md-4 article-intro">
             <div id="yoneda" class="thumbnail"></div>
@@ -92,7 +92,6 @@
 </div>
 <script src="js/load-image.all.min.js"></script>
 <script>
-
     const imageList = [
         {
             id: 'kono',
@@ -130,10 +129,13 @@
             id: 'asada',
             url: '000030.jpg'
         }
-    ]
+    ];
     imageList.forEach((item) => {
         loadImage('images/security/' + item.url,
         (img) => {
+            img.oncontextmenu = (e) => {
+                return false;
+            }
             if(img.type === "error") {
                 console.log("Error loading image " + item.url);
             } else {
