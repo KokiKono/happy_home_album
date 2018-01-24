@@ -1,0 +1,9 @@
+.member .row .name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 子要素をflexboxにより中央に配置する */
+    align-items: center;  /* 子要素をflexboxにより中央に配置する */
+}
+.member .row .name .position {
+    color: #D81B60;
+}
