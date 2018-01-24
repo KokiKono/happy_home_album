@@ -42,7 +42,7 @@
 </nav>
 <div class="jumbotron feature">
     <div class="container">
-        <h1><span class="glyphicon glyphicon-equalizer"></span>Happy Home</h1>
+        <h1>Happy Home</h1>
         <p>マイホームから家族に愛のおくりもの</p>
     </div>
 </div>
@@ -51,7 +51,7 @@
         $('.nav a').click((event) => {
             $('#main').load(event.target.id + '.html');
         });
-        $(document).on('contextmenu', function(e) {
+        $('img').on('contextmenu', function(e) {
             return false;
         });
     });
