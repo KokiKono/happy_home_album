@@ -12,9 +12,7 @@
 <div class="member">
     <div class="row">
         <article class="col-md-4 article-intro">
-            <a href="#">
-                <img class="img-responsive img-rounded" src="holder.js/700x300" alt="">
-            </a>
+            <div id="kono" class="thumbnail"></div>
             <h3 class="name">
                 <p>河野　浩生</p>
                 <small class="position">リーダー</small>
@@ -22,25 +20,133 @@
             <p>進まない開発、途中から企画の意図がわからなくなる。迫りくる納期、審査。怒涛の４ヶ月を過ごしてやつれました。</p>
         </article>
         <article class="col-md-4 article-intro">
-            <a href="#">
-                <img class="img-responsive img-rounded" src="holder.js/700x300" alt="">
-            </a>
-            <h3>
-                <a href="#">Completely Synergize</a>
-            </h3>
-            <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.</p>
-        </article>
-
-        <article class="col-md-4 article-intro">
-            <a href="#">
-                <img class="img-responsive img-rounded" src="holder.js/700x300" alt="">
-            </a>
-            <h3>
-                <a href="#">Dynamically Procrastinate</a>
+            <div id="asakawa" class="thumbnail"></div>
+            <h3 class="name">
+                <p>浅川　伊織</p>
+                <small class="position">サーバー</small>
             </h3>
             <p>Professionally cultivate one-to-one customer service with robust ideas. Completely synergize resource taxing relationships via premier niche markets. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
         </article>
+        <article class="col-md-4 article-intro">
+            <div id="ueshima" class="thumbnail"></div>
+            <h3 class="name">
+                <p>上島　崇寛</p>
+                <small class="position">フロント</small>
+            </h3>
+            <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.</p>
+        </article>
     </div>
     <!-- /.row -->
+    <div class="row">
+        <article class="col-md-4 article-intro">
+            <div id="takai" class="thumbnail"></div>
+            <h3 class="name">
+                <p>高井　陽佑</p>
+                <small class="position">ブース、その他</small>
+            </h3>
+            <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas</p>
+        </article>
+        <article class="col-md-4 article-intro">
+            <div id="dai" class="thumbnail"></div>
+            <h3 class="name">
+                <p>戴　鴬飛</p>
+                <small class="position">モバイルアプリ</small>
+            </h3>
+            <p>Professionally cultivate one-to-one customer service with robust ideas. Completely synergize resource taxing relationships via premier niche markets. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+        </article>
+        <article class="col-md-4 article-intro">
+            <div id="nakano" class="thumbnail"></div>
+            <h3 class="name">
+                <p>中野　裕太</p>
+                <small class="position">iOT</small>
+            </h3>
+            <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.</p>
+        </article>
+    </div>
+    <div class="row">
+        <article class="col-md-4 article-intro">
+            <div id="mizobata" class="thumbnail"></div>
+            <h3 class="name">
+                <p>溝端　晴香</p>
+                <small class="position">イラスト全部</small>
+            </h3>
+            <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas</p>
+        </article>
+        <article class="col-md-4 article-intro">
+            <div id="yoneda" class="thumbnail"></div>
+            <h3 class="name">
+                <p>米田　啓悟</p>
+                <small class="position">ブース責任者</small>
+            </h3>
+            <p>Professionally cultivate one-to-one customer service with robust ideas. Completely synergize resource taxing relationships via premier niche markets. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+        </article>
+        <article class="col-md-4 article-intro">
+            <div id="asada" class="thumbnail"></div>
+            <h3 class="name">
+                <p>浅◯　◯雄</p>
+                <small class="position">？？？？</small>
+            </h3>
+            <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.</p>
+        </article>
+    </div>
 </div>
+<script src="js/load-image.all.min.js"></script>
+<script>
+
+    const imageList = [
+        {
+            id: 'kono',
+            url: 'oh_ih14a703_06_河野浩生.jpg',
+        },
+        {
+            id: 'asakawa',
+            url: 'oh_ih14a703_01_浅川伊織.JPG',
+        },
+        {
+            id: 'ueshima',
+            url: 'oh_ih14a703_04_上島崇寛.JPG',
+        },
+        {
+            id: 'takai',
+            url: 'oh_ih14a703_09_高井陽佑.jpg',
+        },
+        {
+            id: 'dai',
+            url: 'oh_ih14a703_11_戴鴬飛.JPG'
+        },
+        {
+            id: 'nakano',
+            url: 'oh_ih14a703_12_中野裕太.JPG'
+        },
+        {
+            id: 'mizobata',
+            url: 'oh_ih14a703_15_溝端晴香.JPG'
+        },
+        {
+            id: 'yoneda',
+            url: 'oh_ih14a703_16_米田啓悟.JPG',
+        },
+        {
+            id: 'asada',
+            url: '000030.jpg'
+        }
+    ]
+    imageList.forEach((item) => {
+        loadImage('images/security/' + item.url,
+        (img) => {
+            if(img.type === "error") {
+                console.log("Error loading image " + item.url);
+            } else {
+                const imgTag = document.getElementById(item.id);
+                imgTag.appendChild(img);
+            }
+        },
+        {
+            maxWidth: 300,
+                orientation: true,
+        }
+        );
+    });
+
+</script>
 
