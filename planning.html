@@ -7,4 +7,13 @@
         <p>Love Monsterに翻弄され、試行錯誤、迷子した。</p>
     </div>
 </div>
+<div class="monthly" id="planning_calendar"></div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/monthly.js"></script>
+<script type="text/javascript">
+    $(window).load( function() {
+        console.log('hoge')
+        $('#planning_calendar').monthly();
+    });
+</script>
 <iframe width="100%" height="600px" src="pdfjs-1.9.426-dist/web/viewer.html?file=企画詳細.pdf" allowfullscreen>
