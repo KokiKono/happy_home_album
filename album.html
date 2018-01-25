@@ -1,0 +1,65 @@
+<style>
+    .thumbnail {
+        text-align: center;
+    }
+</style>
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">
+            Album
+            <small>アルバム</small>
+        </h1>
+    <p>未来創造展のアルバム一覧</p>
+    </div>
+</div>
+<div class="album">
+</div>
+<script src="js/load-image.all.min.js"></script>
+<script>
+    const imageList = [
+        '000030.jpg',
+        '000030.jpg',
+        '000030.jpg',
+        '000030.jpg',
+        '000030.jpg',
+        '000030.jpg',
+        '000030.jpg',
+    ];
+    imageList.forEach((item) => {
+        loadImage('images/security/' + item,
+        (img) => {
+            img.oncontextmenu = (e) => {
+                return false;
+            }
+            if(img.type === "error") {
+                console.log("Error loading image " + item);
+            } else {
+                if ($(".album>.row").length === 0) {
+                    $(".album").append('<div class="row"></div>');
+                }
+                const rows = $(".album>.row");
+                const articles= $(rows[rows.length - 1]).children('article');
+                if (articles.length === 3) {
+                    console.log('改行');
+                    $(".album").append('<div class="row"></div>');
+                }
+                const latestRow = $(".album>.row")[$(".album>.row").length - 1];
+                const article = $('<article></article>' , {
+                    "class": 'col-md-4 article-intro'
+                });
+
+                const thumbnail = $('<div></div>', { addClass: 'thumbnail' });
+                $(thumbnail).append(img);
+                $(article).append(thumbnail);
+                $(latestRow).append(article);
+            }
+        },
+        {
+            maxWidth: 300,
+                orientation: true,
+        }
+        );
+    });
+
+</script>
+

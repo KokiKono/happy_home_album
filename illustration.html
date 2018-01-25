@@ -1,0 +1,60 @@
+<style rel="stylesheet">
+    .booth_image {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 50px;
+    }
+    .comment {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    dd {
+        font-size: large;
+        color: #F48FB1;
+    }
+</style>
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">
+            Image Illustration
+            <small>イメージイラスト</small>
+        </h1>
+        <div class="booth_image">
+            <div id="image">
+            </div>
+
+            <div class="comment">
+               <dl>
+                   <dd>コンセプト</dd>
+                   <dt>ああああああああああああああああああ</dt>
+                   <dd>工夫</dd>
+                   <dt>ああああああああああああああああああああああああああああああああああああ</dt>
+                   <dd>感想</dd>
+                   <dt>ああああああああああああああああああああああああああああああああああああああああああああああああああああ</dt>
+               </dl>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/load-image.all.min.js"></script>
+<script>
+    loadImage('images/oh_X429_cmyk.jpg',
+        (img) => {
+        img.oncontextmenu = (e) => {
+        return false;
+        }
+        if(img.type === "error") {
+           console.log("Error loading image " + item.url);
+        } else {
+            const imgTag = document.getElementById('image');
+            imgTag.appendChild(img);
+        }
+    },
+    {
+        maxWidth: 500,
+            orientation: true,
+    }
+    );
+</script>

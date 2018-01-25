@@ -9,6 +9,15 @@
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
     background-color: #F8BBD0;
 }
+.navbar-inverse .navbar-nav>li>a {
+    color: #F48FB1;
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #F48FB1;
+}
+/*.navbar-inverse .navbar-nav>.active>a {*/
+    /*color: #F8BBD0;*/
+/*}*/
 
 .navbar-inverse {
     border-bottom-color: #F48FB1;

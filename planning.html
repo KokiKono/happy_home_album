@@ -1,19 +1,76 @@
+<style rel="stylesheet">
+    .list_item-header {
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
 <div class="row">
     <div class="col-lg-12">
         <h1 class="page-header">
             Planning
             <small>企画説明</small>
         </h1>
-        <p>Love Monsterに翻弄され、試行錯誤、迷子した。</p>
+        <p>生々しい未来創造展のテーマ発表から企画決定まで。</p>
+        <div class="list-group">
+            <div class="list-group-item flex-column align-items-start">
+                <div class="list_item-header">
+                    <h5>１、テーマ発表から個人企画FIX</h5>
+                    <small>夏休み明け</small>
+                </div>
+                <p>テーマ発表を夏休み前に受け、課題として出された個人企画をチーム内でレビュー</p>
+            </div>
+            <div class="list-group-item flex-column align-items-start">
+                <div class="list_item-header">
+                    <h5>２、チーム内企画をワンシートへ</h5>
+                    <small>９月初旬</small>
+                </div>
+                <p>チーム内で良いと思った個人企画をチーム企画としてワンシート企画として３案提出</p>
+            </div>
+            <div class="list-group-item flex-column align-items-start">
+                <div class="list_item-header">
+                    <h5>３、努力虚しく、３案ともボツ</h5>
+                    <small>９月中旬</small>
+                </div>
+                <p>一回目の企画提出では、不採用となったのでここからエンドレス企画。</p>
+                <p>一回目と二回目の企画決定では、一週間程度、差がでるので、しんどかった。</p>
+            </div>
+            <div class="list-group-item flex-column align-items-start">
+                <div class="list_item-header">
+                    <h5>４、他の愛を模索</h5>
+                    <small>９月中旬</small>
+                </div>
+                <p>このあたりから、迷走しまくり。</p>
+            </div>
+            <div class="list-group-item flex-column align-items-start">
+                <div class="list_item-header">
+                    <h5>５、家愛</h5>
+                    <small>９月中旬</small>
+                </div>
+                <p>メンバーが、ニートばかりってこともあり、家大好きを発見。</p>
+                <p>家をもっと好きになれる何かを模索！</p>
+            </div>
+            <div class="list-group-item flex-column align-items-start">
+                <div class="list_item-header">
+                    <h5>６、家愛が家族愛に。</h5>
+                    <small>９月下旬</small>
+                </div>
+                <p>ワンシート企画を作成し提出するも、家族愛じゃない？？っと突っ込まれる。</p>
+                <p>言い返す元気もなく家族愛で妥協。</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1 class="page-header">
+            ワンシート企画
+        </h1>
+        <p>最終的に採用された企画</p>
+        <iframe width="100%" height="600px" src="pdfjs-1.9.426-dist/web/viewer.html?file=ワンシート企画.pdf" allowfullscreen></iframe>
+    </div>
+    <div>
+        <h1 class="page-header">
+            企画詳細
+        </h1>
+        <p>最終的に採用された企画詳細</p>
+        <iframe width="100%" height="600px" src="pdfjs-1.9.426-dist/web/viewer.html?file=企画詳細.pdf" allowfullscreen></iframe>
     </div>
 </div>
-<div class="monthly" id="planning_calendar"></div>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/monthly.js"></script>
-<script type="text/javascript">
-    $(window).load( function() {
-        console.log('hoge')
-        $('#planning_calendar').monthly();
-    });
-</script>
-<iframe width="100%" height="600px" src="pdfjs-1.9.426-dist/web/viewer.html?file=企画詳細.pdf" allowfullscreen>

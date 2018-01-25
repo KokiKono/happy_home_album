@@ -24,15 +24,16 @@
                     <a href="#" id="planning">企画説明</a>
                 </li>
                 <li>
-                    <a href="#">Products</a>
+                    <a href="#" id="system">システム概要</a>
                 </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
-                    <ul class="dropdown-menu" aria-labelledby="about-us">
-                        <li><a href="#">Engage</a></li>
-                        <li><a href="#">Pontificate</a></li>
-                        <li><a href="#">Synergize</a></li>
-                    </ul>
+                <li>
+                    <a href="#" id="booth">ブース</a>
+                </li>
+                <li>
+                    <a href="#" id="illustration">イメージイラスト</a>
+                </li>
+                <li>
+                    <a href="#" id="album">アルバム</a>
                 </li>
             </ul>
         </div>
@@ -50,7 +51,12 @@
     $(() => {
         $('.nav a').click((event) => {
             $('#main').load(event.target.id + '.html');
-        });
+            console.log(event.target.id);
+            $(event.target).parents().find('li').removeClass('active');
+            $(event.target).parent().addClass('active');
+            const offsetTop =  $('#main').offset().top - $('nav').height();
+            $("html,body").animate({scrollTop: offsetTop});
+    });
         $('img').on('contextmenu', function(e) {
             return false;
         });
