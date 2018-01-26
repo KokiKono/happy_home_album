@@ -1,8 +1,18 @@
 <style rel="stylesheet">
     .booth_image {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         padding-bottom: 50px;
+    }
+    .comment {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    dd {
+        font-size: large;
+        color: #F48FB1;
     }
 </style>
 <div class="row">
@@ -13,7 +23,39 @@
         </h1>
         <p>ポイントは、システムとの関わり</p>
         <div class="booth_image">
-            <img src="images/booth.jpg">
+            <div id="image">
+            </div>
+
+            <div class="comment">
+                <dl>
+                    <dd>コンセプト</dd>
+                    <dt>正面メインの家の屋根を光らせるということでメインの家の屋根を強調。</dt>
+                    <dd>工夫</dd>
+                    <dt>ドアは開閉できるように工夫しました。窓枠モニターは壁にぴったりはめ込むためモニターの足が出てしまうのを花壇カバーしました。/dt>
+                    <dd>感想</dd>
+                    <dt>ブースイメージや素材発注、設計を一人で行っていたので人手が足りずだいぶ苦労しました。ブース作成後半から人員が増えなんとか間に合いました。</dt>
+                </dl>
+            </div>
         </div>
     </div>
 </div>
+<script src="js/load-image.all.min.js"></script>
+<script>
+    loadImage('images/booth.jpg',
+        (img) => {
+        img.oncontextmenu = (e) => {
+        return false;
+    }
+    if(img.type === "error") {
+        console.log("Error loading image " + item.url);
+    } else {
+        const imgTag = document.getElementById('image');
+        imgTag.appendChild(img);
+    }
+    },
+    {
+        maxWidth: 500,
+            orientation: true,
+    }
+    );
+</script>

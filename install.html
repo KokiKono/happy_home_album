@@ -1,0 +1,70 @@
+<style rel="stylesheet">
+    .list_item-header {
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">
+            Install Manual
+            <small>インストールマニュアル</small>
+        </h1>
+        <p>基本的にブラウザ(Chrome)からの操作、DBのdumpファイルを実行しておく。</p>
+        <div class="list-group">
+            <div class="list-group-item flex-column align-items-start">
+                <div class="list_item-header">
+                    <h5>１、リポジトリをクローン</h5>
+                </div>
+                <p>下記、リポジトリをcloneしてきて、READMEのset upを実行してください。</p>
+                <a href="https://github.com/KokiKono/happy_home">Github リポジトリ</a>
+            </div>
+            <div class="list-group-item flex-column align-items-start">
+                <div class="list_item-header">
+                    <h5>２、プロジェクト配下のconfig.jsonの設定</h5>
+                </div>
+                <p>production.urlを現在のローカルIPアドレスに変更</p>
+                <p>api-keyをMicrosoft AzureでAPIキーを取得してきて設定</p>
+            </div>
+            <div class="list-group-item flex-column align-items-start">
+                <div class="list_item-header">
+                    <h5>３、サーバー起動(make production-run)</h5>
+                </div>
+                <p>基本的に動くはず、ご自分の実行環境に合わせて適宜変更してください。</p>
+                <p>make installを忘れずに！</p>
+            </div>
+            <div class="list-group-item flex-column align-items-start">
+                <div class="list_item-header">
+                    <h5>４、https://your_ip:5000/management/portal/にアクセス</h5>
+                </div>
+                <p>ここが、基本的な操作画面（ポータル画面）。画面の次へ的なボタンを押せばOK</p>
+            </div>
+            <div class="list-group-item flex-column align-items-start">
+                <div class="list_item-header">
+                    <h5>５、iOSアプリのインストール</h5>
+                </div>
+                <p>プロジェクトを開いてインストール</p>
+            </div>
+            <div class="list-group-item flex-column align-items-start">
+                <div class="list_item-header">
+                    <h5>６、アプリのネット設定</h5>
+                </div>
+                <p>サーバーにしているPCと同一ネットワークにして、IP設定。家族作成後、ログインに家族リストが出ます。</p>
+            </div>
+            <div class="list-group-item flex-column align-items-start">
+                <div class="list_item-header">
+                    <h5>７、メインとサブ画面を開く</h5>
+                </div>
+                <p>http://your_ip:8080/main/</p>
+                <p>http://your_ip:8080/sub/</p>
+            </div>
+            <div class="list-group-item flex-column align-items-start">
+                <div class="list_item-header">
+                <h5>８、あとは、ポータル画面で操作</h5>
+                </div>
+                <p>提案処理とかするとアプリで通知が行くかも？感情により異なります。</p>
+                <p>データベースにデータを入れておく必要があります。</p>
+            </div>
+        </div>
+    </div>
+</div>
